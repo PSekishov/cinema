@@ -1,5 +1,6 @@
 const schemeSVG = document.querySelector('.scheme-svg');
 const totalPriceTag = document.querySelector('.dollar');
+const menuBTN = document.querySelector('.m-menu');
 
 let price = 15;
 let totalPrice = 0;
@@ -17,3 +18,12 @@ schemeSVG.addEventListener('click', (e) => {
     };
  
 });
+
+/*********************************/
+
+const mobileMenu = () => {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('is-open');
+};
+
+menuBTN.addEventListener('click', mobileMenu);
